@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CoreGraphicsView.h"
+#import "ShapeLayerBasicView.h"
 @interface ViewController ()
 
 @end
@@ -17,9 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    CoreGraphicsView *view = [[CoreGraphicsView alloc]initWithFrame:CGRectMake(0, 100, 400, 500)];
+//    CoreGraphicsView *view = [[CoreGraphicsView alloc]initWithFrame:CGRectMake(0, 100, 400, 500)];
+//    [self.view addSubview:view];
+    ShapeLayerBasicView *view = [[ShapeLayerBasicView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     [self.view addSubview:view];
-    
 }
 
 
