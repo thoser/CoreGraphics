@@ -8,8 +8,13 @@
 
 #import "ViewController.h"
 #import "XNAlertView.h"
-@interface ViewController ()
-
+#import "XNView.h"
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
+    UITableView *tableview;
+}
+@property (nonatomic, copy)NSArray *titleArr;
+@property (nonatomic, copy)NSArray *detailArr;
 @end
 
 @implementation ViewController
@@ -25,10 +30,15 @@
     
     [self.view addSubview:btn];
 }
+- (void)initData{
+    [[NSUserDefaults standardUserDefaults]setObject:@"1" forKey:@"str"];
+    _titleArr = @[@"123",@"123",@"123"];
+    _detailArr = @[@"我说你是傻逼",@"你到底是不是呢",@"你说对吧哈哈哈哈"];
+}
 -(void)btnClick{
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width - 80, 100)];
-    label.text = @"我的妈呀你是个傻逼吧？";
-    XNAlertView *view = [[XNAlertView alloc]initWithCenterView:label buttonArray:@[@"确定",@"取消"]];
+   
+    XNView *view1 = [[XNView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width - 80, 140)];
+    XNAlertView *view = [[XNAlertView alloc]initWithCenterView:view1 buttonArray:@[@"确定",@"取消"]];
     view.mainColor = [UIColor blueColor];
     view.title = @"提示";
     //    [self.view addSubview:view];
@@ -37,9 +47,19 @@
     
     
 }
-- (void)viewWillAppear:(BOOL)animated{
-    
-}
+//- (UIView *)cofigTableview{
+//    tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width - 80, 200) style:UITableViewStylePlain];
+//    tableview.delegate =self;
+//    tableview.dataSource = self;
+//    tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
+//    tableview.estimatedRowHeight = 30;
+//    [tableview registerNib:[UINib nibWithNibName:@"XNCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+//
+//    return tableview;
+//
+//}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

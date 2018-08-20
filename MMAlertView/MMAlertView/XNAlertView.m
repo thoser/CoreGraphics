@@ -41,7 +41,6 @@
     _titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, _bgView.frame.size.width, 50)];
     _titleLabel.textColor = _mainColor;
     _titleLabel.textAlignment = NSTextAlignmentCenter;
-    _titleLabel.backgroundColor = [UIColor blackColor];
     _titleLabel.font = [UIFont systemFontOfSize:18];
     _titleLabel.userInteractionEnabled = YES;
     [self.bgView addSubview:_titleLabel];
@@ -51,7 +50,6 @@
     rect.origin.x = 10;
     rect.origin.y = 60;
     _centerView.frame = rect;
-    _centerView.backgroundColor = [UIColor redColor];
     
     if (_buttonArray.count == 0) {
         return;
@@ -115,7 +113,10 @@
         [UIView animateWithDuration:0.5 animations:^{
             self.transform = CGAffineTransformScale(self.transform,0.1,0.1);
             self.alpha = 0;
+        }completion:^(BOOL finished) {
+            [self removeFromSuperview];
         }];
+        
     }
 }
 /*
