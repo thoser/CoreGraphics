@@ -7,7 +7,7 @@
 //
 
 #import "XNAlertView.h"
-
+#define TagValue  1000
 @interface XNAlertView()
 {
     
@@ -41,7 +41,9 @@
     _titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, _bgView.frame.size.width, 50)];
     _titleLabel.textColor = _mainColor;
     _titleLabel.textAlignment = NSTextAlignmentCenter;
+    _titleLabel.backgroundColor = [UIColor blackColor];
     _titleLabel.font = [UIFont systemFontOfSize:18];
+    _titleLabel.userInteractionEnabled = YES;
     [self.bgView addSubview:_titleLabel];
     
     [self.bgView addSubview:_centerView];
@@ -49,6 +51,8 @@
     rect.origin.x = 10;
     rect.origin.y = 60;
     _centerView.frame = rect;
+    _centerView.backgroundColor = [UIColor redColor];
+    
     if (_buttonArray.count == 0) {
         return;
     }
@@ -58,12 +62,13 @@
         UIButton *btn = [[UIButton alloc]init];
         [self.bgView addSubview:btn];
         btn.frame = CGRectMake(margin + (width + margin) * i, _bgView.frame.size.height - 45, width, 40);
-        [btn setTitleColor:[UIColor darkGrayColor]  forState:UIControlStateNormal];
+        [btn setTitleColor:_mainColor  forState:UIControlStateNormal];
         [btn setTitle:_buttonArray[i] forState:UIControlStateNormal];
         btn.layer.cornerRadius = 5;
-        btn.backgroundColor = [UIColor whiteColor];
+        btn.layer.masksToBounds = YES;
         btn.layer.borderColor = _mainColor.CGColor;
         btn.layer.borderWidth = 0.5;
+        btn.backgroundColor = [UIColor whiteColor];
         if (i == 0) {
             btn.backgroundColor = _mainColor;
             [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -81,15 +86,37 @@
     [self dismiss];
     
 }
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+}
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event{
+    return YES;
+}
 - (void)setTitle:(NSString *)title{
     _titleLabel.text = title;
 }
 
 - (void)show{
-    [[[[UIApplication sharedApplication]windows]firstObject]addSubview:self];
+    if (self.superview) {
+        [self removeFromSuperview];
+    }
+    [[UIApplication sharedApplication].keyWindow addSubview:self];
+    self.center = [UIApplication sharedApplication].keyWindow.center;
+    self.alpha = 0;
+    self.transform = CGAffineTransformScale(self.transform,0.5,0.5);
+    [UIView animateWithDuration:0.5 animations:^{
+        self.transform = CGAffineTransformIdentity;
+        self.alpha = 1;
+    }];
+    
 }
 - (void)dismiss{
-    [self removeFromSuperview];
+    if (self.superview) {
+        [UIView animateWithDuration:0.5 animations:^{
+            self.transform = CGAffineTransformScale(self.transform,0.1,0.1);
+            self.alpha = 0;
+        }];
+    }
 }
 /*
 // Only override drawRect: if you perform custom drawing.
