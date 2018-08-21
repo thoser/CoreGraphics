@@ -16,6 +16,9 @@
 		DD3819692129B90100C3133D /* MMAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3819682129B90100C3133D /* MMAlertViewTests.m */; };
 		DD3819742129B90100C3133D /* MMAlertViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3819732129B90100C3133D /* MMAlertViewUITests.m */; };
 		DD3819832129B91900C3133D /* XNAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3819822129B91900C3133D /* XNAlertView.m */; };
+		DD381987212AD80100C3133D /* XNCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD381985212AD80100C3133D /* XNCell.m */; };
+		DD381988212AD80100C3133D /* XNCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD381986212AD80100C3133D /* XNCell.xib */; };
+		DD38198B212AED2600C3133D /* XNView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD38198A212AED2600C3133D /* XNView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,11 @@
 		DD3819752129B90100C3133D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD3819812129B91900C3133D /* XNAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNAlertView.h; sourceTree = "<group>"; };
 		DD3819822129B91900C3133D /* XNAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNAlertView.m; sourceTree = "<group>"; };
+		DD381984212AD80100C3133D /* XNCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNCell.h; sourceTree = "<group>"; };
+		DD381985212AD80100C3133D /* XNCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNCell.m; sourceTree = "<group>"; };
+		DD381986212AD80100C3133D /* XNCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XNCell.xib; sourceTree = "<group>"; };
+		DD381989212AED2600C3133D /* XNView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNView.h; sourceTree = "<group>"; };
+		DD38198A212AED2600C3133D /* XNView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +116,13 @@
 				DD3819502129B90000C3133D /* AppDelegate.m */,
 				DD3819522129B90000C3133D /* ViewController.h */,
 				DD3819532129B90000C3133D /* ViewController.m */,
+				DD381989212AED2600C3133D /* XNView.h */,
+				DD38198A212AED2600C3133D /* XNView.m */,
 				DD3819812129B91900C3133D /* XNAlertView.h */,
 				DD3819822129B91900C3133D /* XNAlertView.m */,
+				DD381984212AD80100C3133D /* XNCell.h */,
+				DD381985212AD80100C3133D /* XNCell.m */,
+				DD381986212AD80100C3133D /* XNCell.xib */,
 				DD3819552129B90000C3133D /* Main.storyboard */,
 				DD3819582129B90100C3133D /* Assets.xcassets */,
 				DD38195A2129B90100C3133D /* LaunchScreen.storyboard */,
@@ -241,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD38195C2129B90100C3133D /* LaunchScreen.storyboard in Resources */,
+				DD381988212AD80100C3133D /* XNCell.xib in Resources */,
 				DD3819592129B90100C3133D /* Assets.xcassets in Resources */,
 				DD3819572129B90000C3133D /* Main.storyboard in Resources */,
 			);
@@ -269,7 +283,9 @@
 			files = (
 				DD3819542129B90000C3133D /* ViewController.m in Sources */,
 				DD3819832129B91900C3133D /* XNAlertView.m in Sources */,
+				DD38198B212AED2600C3133D /* XNView.m in Sources */,
 				DD38195F2129B90100C3133D /* main.m in Sources */,
+				DD381987212AD80100C3133D /* XNCell.m in Sources */,
 				DD3819512129B90000C3133D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,7 +456,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WE22B9PJFJ;
 				INFOPLIST_FILE = MMAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,7 +472,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WE22B9PJFJ;
 				INFOPLIST_FILE = MMAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
