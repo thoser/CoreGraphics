@@ -101,17 +101,17 @@
     [[UIApplication sharedApplication].keyWindow addSubview:self];
     self.center = [UIApplication sharedApplication].keyWindow.center;
     self.alpha = 0;
-    self.transform = CGAffineTransformScale(self.transform,0.5,0.5);
-    [UIView animateWithDuration:0.5 animations:^{
-        self.transform = CGAffineTransformIdentity;
+    self.bgView.transform = CGAffineTransformScale(self.transform,0.1,0.1);
+    [UIView animateWithDuration:0.2 animations:^{
+        self.bgView.transform = CGAffineTransformIdentity;
         self.alpha = 1;
     }];
     
 }
 - (void)dismiss{
     if (self.superview) {
-        [UIView animateWithDuration:0.5 animations:^{
-            self.transform = CGAffineTransformScale(self.transform,0.1,0.1);
+        [UIView animateWithDuration:0.2 animations:^{
+            self.bgView.transform = CGAffineTransformScale(self.transform,0.1,0.1);
             self.alpha = 0;
         }completion:^(BOOL finished) {
             [self removeFromSuperview];
