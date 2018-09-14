@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF1AFDB2AEEC20BC0655EBA9 /* Pods_ProjectMMVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDFFB18176B4F0233D8C9AC /* Pods_ProjectMMVM.framework */; };
+		82CFE98C86879DCDB696AC24 /* libPods-ProjectMMVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E7D1940BDC062D7F16DD09 /* libPods-ProjectMMVM.a */; };
 		E88B65582148FF77008F3006 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B65572148FF77008F3006 /* AppDelegate.m */; };
-		E88B655B2148FF77008F3006 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B655A2148FF77008F3006 /* ViewController.m */; };
 		E88B655E2148FF77008F3006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B655C2148FF77008F3006 /* Main.storyboard */; };
 		E88B65602148FF7A008F3006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E88B655F2148FF7A008F3006 /* Assets.xcassets */; };
 		E88B65632148FF7A008F3006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88B65612148FF7A008F3006 /* LaunchScreen.storyboard */; };
@@ -18,7 +17,8 @@
 		E88B657B2148FF7A008F3006 /* ProjectMMVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B657A2148FF7A008F3006 /* ProjectMMVMUITests.m */; };
 		E88B658E214902CB008F3006 /* XNViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B658D214902CB008F3006 /* XNViewModel.m */; };
 		E88B6591214902D7008F3006 /* XNModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B6590214902D7008F3006 /* XNModel.m */; };
-		E88B659B2149132E008F3006 /* NerWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B659A2149132E008F3006 /* NerWorkManager.m */; };
+		E88B659B2149132E008F3006 /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B659A2149132E008F3006 /* NetWorkManager.m */; };
+		E88B659E214A48B5008F3006 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88B659D214A48B5008F3006 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,13 +40,11 @@
 
 /* Begin PBXFileReference section */
 		1ACB96FDCC6E13C27296E55F /* Pods-ProjectMMVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMMVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectMMVM/Pods-ProjectMMVM.release.xcconfig"; sourceTree = "<group>"; };
+		44E7D1940BDC062D7F16DD09 /* libPods-ProjectMMVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectMMVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28E8C80D2C836F4842236AB /* Pods-ProjectMMVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectMMVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectMMVM/Pods-ProjectMMVM.debug.xcconfig"; sourceTree = "<group>"; };
-		BCDFFB18176B4F0233D8C9AC /* Pods_ProjectMMVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectMMVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B65532148FF77008F3006 /* ProjectMMVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectMMVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88B65562148FF77008F3006 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E88B65572148FF77008F3006 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E88B65592148FF77008F3006 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E88B655A2148FF77008F3006 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E88B655D2148FF77008F3006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E88B655F2148FF7A008F3006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E88B65622148FF7A008F3006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,8 +61,10 @@
 		E88B658F214902D7008F3006 /* XNModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XNModel.h; sourceTree = "<group>"; };
 		E88B6590214902D7008F3006 /* XNModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XNModel.m; sourceTree = "<group>"; };
 		E88B6598214910C1008F3006 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		E88B65992149132E008F3006 /* NerWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NerWorkManager.h; sourceTree = "<group>"; };
-		E88B659A2149132E008F3006 /* NerWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NerWorkManager.m; sourceTree = "<group>"; };
+		E88B65992149132E008F3006 /* NetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
+		E88B659A2149132E008F3006 /* NetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
+		E88B659C214A48B5008F3006 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E88B659D214A48B5008F3006 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF1AFDB2AEEC20BC0655EBA9 /* Pods_ProjectMMVM.framework in Frameworks */,
+				82CFE98C86879DCDB696AC24 /* libPods-ProjectMMVM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,8 +191,8 @@
 		E88B659321490DAD008F3006 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				E88B65992149132E008F3006 /* NerWorkManager.h */,
-				E88B659A2149132E008F3006 /* NerWorkManager.m */,
+				E88B65992149132E008F3006 /* NetWorkManager.h */,
+				E88B659A2149132E008F3006 /* NetWorkManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -207,8 +207,8 @@
 		E88B659721490DD3008F3006 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E88B65592148FF77008F3006 /* ViewController.h */,
-				E88B655A2148FF77008F3006 /* ViewController.m */,
+				E88B659C214A48B5008F3006 /* ViewController.h */,
+				E88B659D214A48B5008F3006 /* ViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 		F3942E423364C4430B51BBC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BCDFFB18176B4F0233D8C9AC /* Pods_ProjectMMVM.framework */,
+				44E7D1940BDC062D7F16DD09 /* libPods-ProjectMMVM.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -410,9 +410,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E88B655B2148FF77008F3006 /* ViewController.m in Sources */,
+				E88B659E214A48B5008F3006 /* ViewController.m in Sources */,
 				E88B65662148FF7A008F3006 /* main.m in Sources */,
-				E88B659B2149132E008F3006 /* NerWorkManager.m in Sources */,
+				E88B659B2149132E008F3006 /* NetWorkManager.m in Sources */,
 				E88B6591214902D7008F3006 /* XNModel.m in Sources */,
 				E88B658E214902CB008F3006 /* XNViewModel.m in Sources */,
 				E88B65582148FF77008F3006 /* AppDelegate.m in Sources */,
@@ -587,7 +587,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WE22B9PJFJ;
-				GCC_PREFIX_HEADER = "$(OBJROOT)/ProjectMMVM/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectMMVM/PrefixHeader.pch";
 				INFOPLIST_FILE = ProjectMMVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -606,7 +606,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WE22B9PJFJ;
-				GCC_PREFIX_HEADER = "$(OBJROOT)/ProjectMMVM/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectMMVM/PrefixHeader.pch";
 				INFOPLIST_FILE = ProjectMMVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
