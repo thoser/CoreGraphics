@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="idU-xU-WQG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="0ga-Bf-cc8"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lnw-1g-wur"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="idU-xU-WQG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GW5-Rc-rEe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="idU-xU-WQG" secondAttribute="trailing" id="S7S-Ml-KsO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="idU-xU-WQG" secondAttribute="bottom" id="eqd-xG-evb"/>
+                            <constraint firstItem="idU-xU-WQG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="g0Y-sS-bnf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="idU-xU-WQG" id="5zv-Sj-Q8Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="130"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="M2h-1C-gua">
+            <objects>
+                <viewController storyboardIdentifier="detail" id="DNN-ft-ot1" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="detail" id="s0c-P9-G2L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pD-ZP-YZt">
+                                <rect key="frame" x="100" y="120" width="175" height="447"/>
+                                <string key="text">导航控制器的根控制器是VC1，通过点击VC1中tableView第X行，跳转到VC2。其中,VC2中有一个方法是把数据源的第X个元素替换成字符串【replace item】；
+2.通过使用3D Touch,在VC1中实现快速预览的功能；
+3.使用3D Touch，在VC1中跳转进入到VC2；
+4.通过快捷菜单中的【替换该元素】选项，替换数据源中的第X个元素
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6pD-ZP-YZt" firstAttribute="leading" secondItem="PVP-5A-Vgx" secondAttribute="leading" constant="100" id="6vC-Ad-lti"/>
+                            <constraint firstItem="PVP-5A-Vgx" firstAttribute="bottom" secondItem="6pD-ZP-YZt" secondAttribute="bottom" constant="100" id="DJy-NR-fiN"/>
+                            <constraint firstItem="PVP-5A-Vgx" firstAttribute="trailing" secondItem="6pD-ZP-YZt" secondAttribute="trailing" constant="100" id="JxB-Yp-8Wk"/>
+                            <constraint firstItem="6pD-ZP-YZt" firstAttribute="top" secondItem="PVP-5A-Vgx" secondAttribute="top" constant="100" id="imx-BZ-dqa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PVP-5A-Vgx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjq-IM-ivF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="548" y="130"/>
+        </scene>
+    </scenes>
+</document>
