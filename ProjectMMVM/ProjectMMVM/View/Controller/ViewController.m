@@ -18,10 +18,18 @@
 @end
 
 @implementation ViewController
-
+typedef int(^clickBlock)(int a);
+- (void)config:(clickBlock)clickBlock{
+    NSLog(@"%@",clickBlock);
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+<<<<<<< HEAD
+    [self config:^int(int a) {
+        a = 10;
+        return a+1;
+=======
     self.viewModel = [[XNViewModel alloc]init];
     [self bindViewModel];
 }
@@ -47,6 +55,7 @@
     //错误信息
     [self.viewModel.loginCommand.errors subscribeNext:^(id x) {
         
+>>>>>>> 17d7762e18dc7b2001af88c8acc807033a9f84e7
     }];
 }
 

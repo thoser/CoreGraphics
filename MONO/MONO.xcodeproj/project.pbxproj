@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77BB5484B28426220868D722 /* libPods-MONO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F911504F1A0F621340B1BBDB /* libPods-MONO.a */; };
+		870CD789611D7CFFF6BDA6ED /* libPods-MONO-MONOTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD6213273258D39CCF0E001 /* libPods-MONO-MONOTests.a */; };
+		DD1067082243D405000B5E6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1067072243D405000B5E6E /* AppDelegate.m */; };
+		DD10670B2243D405000B5E6E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD10670A2243D405000B5E6E /* ViewController.m */; };
+		DD10670E2243D405000B5E6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD10670C2243D405000B5E6E /* Main.storyboard */; };
+		DD1067102243D407000B5E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD10670F2243D407000B5E6E /* Assets.xcassets */; };
+		DD1067132243D407000B5E6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD1067112243D407000B5E6E /* LaunchScreen.storyboard */; };
+		DD1067162243D407000B5E6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1067152243D407000B5E6E /* main.m */; };
+		DD1067202243D407000B5E6E /* MONOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD10671F2243D407000B5E6E /* MONOTests.m */; };
+		DD10672B2243D407000B5E6E /* MONOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD10672A2243D407000B5E6E /* MONOUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD10671C2243D407000B5E6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD1066FB2243D405000B5E6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD1067022243D405000B5E6E;
+			remoteInfo = MONO;
+		};
+		DD1067272243D407000B5E6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD1066FB2243D405000B5E6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD1067022243D405000B5E6E;
+			remoteInfo = MONO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180FA471905A3F08510B1E55 /* Pods-MONO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MONO.release.xcconfig"; path = "Pods/Target Support Files/Pods-MONO/Pods-MONO.release.xcconfig"; sourceTree = "<group>"; };
+		537D3E9A22F6F7CBEE4C0730 /* Pods-MONO-MONOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MONO-MONOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MONO-MONOTests/Pods-MONO-MONOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CD6213273258D39CCF0E001 /* libPods-MONO-MONOTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MONO-MONOTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BA11DE3FF07FA0077FE9D1 /* Pods-MONO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MONO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MONO/Pods-MONO.debug.xcconfig"; sourceTree = "<group>"; };
+		DD1067032243D405000B5E6E /* MONO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MONO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD1067062243D405000B5E6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD1067072243D405000B5E6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD1067092243D405000B5E6E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD10670A2243D405000B5E6E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD10670D2243D405000B5E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD10670F2243D407000B5E6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD1067122243D407000B5E6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD1067142243D407000B5E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1067152243D407000B5E6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD10671B2243D407000B5E6E /* MONOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MONOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD10671F2243D407000B5E6E /* MONOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MONOTests.m; sourceTree = "<group>"; };
+		DD1067212243D407000B5E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1067262243D407000B5E6E /* MONOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MONOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD10672A2243D407000B5E6E /* MONOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MONOUITests.m; sourceTree = "<group>"; };
+		DD10672C2243D407000B5E6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C5E4E8BE7C0AEBA34E9833 /* Pods-MONO-MONOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MONO-MONOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MONO-MONOTests/Pods-MONO-MONOTests.release.xcconfig"; sourceTree = "<group>"; };
+		F911504F1A0F621340B1BBDB /* libPods-MONO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MONO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD1067002243D405000B5E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BB5484B28426220868D722 /* libPods-MONO.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1067182243D407000B5E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870CD789611D7CFFF6BDA6ED /* libPods-MONO-MONOTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1067232243D407000B5E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5EA3FAF427A8DDA316558C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62BA11DE3FF07FA0077FE9D1 /* Pods-MONO.debug.xcconfig */,
+				180FA471905A3F08510B1E55 /* Pods-MONO.release.xcconfig */,
+				537D3E9A22F6F7CBEE4C0730 /* Pods-MONO-MONOTests.debug.xcconfig */,
+				E9C5E4E8BE7C0AEBA34E9833 /* Pods-MONO-MONOTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD1066FA2243D405000B5E6E = {
+			isa = PBXGroup;
+			children = (
+				DD1067052243D405000B5E6E /* MONO */,
+				DD10671E2243D407000B5E6E /* MONOTests */,
+				DD1067292243D407000B5E6E /* MONOUITests */,
+				DD1067042243D405000B5E6E /* Products */,
+				B5EA3FAF427A8DDA316558C9 /* Pods */,
+				E44259ACFE693C289BDE5BB9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD1067042243D405000B5E6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD1067032243D405000B5E6E /* MONO.app */,
+				DD10671B2243D407000B5E6E /* MONOTests.xctest */,
+				DD1067262243D407000B5E6E /* MONOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD1067052243D405000B5E6E /* MONO */ = {
+			isa = PBXGroup;
+			children = (
+				DD1067062243D405000B5E6E /* AppDelegate.h */,
+				DD1067072243D405000B5E6E /* AppDelegate.m */,
+				DD1067092243D405000B5E6E /* ViewController.h */,
+				DD10670A2243D405000B5E6E /* ViewController.m */,
+				DD10670C2243D405000B5E6E /* Main.storyboard */,
+				DD10670F2243D407000B5E6E /* Assets.xcassets */,
+				DD1067112243D407000B5E6E /* LaunchScreen.storyboard */,
+				DD1067142243D407000B5E6E /* Info.plist */,
+				DD1067152243D407000B5E6E /* main.m */,
+			);
+			path = MONO;
+			sourceTree = "<group>";
+		};
+		DD10671E2243D407000B5E6E /* MONOTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD10671F2243D407000B5E6E /* MONOTests.m */,
+				DD1067212243D407000B5E6E /* Info.plist */,
+			);
+			path = MONOTests;
+			sourceTree = "<group>";
+		};
+		DD1067292243D407000B5E6E /* MONOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD10672A2243D407000B5E6E /* MONOUITests.m */,
+				DD10672C2243D407000B5E6E /* Info.plist */,
+			);
+			path = MONOUITests;
+			sourceTree = "<group>";
+		};
+		E44259ACFE693C289BDE5BB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F911504F1A0F621340B1BBDB /* libPods-MONO.a */,
+				5CD6213273258D39CCF0E001 /* libPods-MONO-MONOTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD1067022243D405000B5E6E /* MONO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD10672F2243D407000B5E6E /* Build configuration list for PBXNativeTarget "MONO" */;
+			buildPhases = (
+				A042CBA9A526196D587422D6 /* [CP] Check Pods Manifest.lock */,
+				DD1066FF2243D405000B5E6E /* Sources */,
+				DD1067002243D405000B5E6E /* Frameworks */,
+				DD1067012243D405000B5E6E /* Resources */,
+				7FCD2DF70AC17317F7D7A1EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MONO;
+			productName = MONO;
+			productReference = DD1067032243D405000B5E6E /* MONO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD10671A2243D407000B5E6E /* MONOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD1067322243D407000B5E6E /* Build configuration list for PBXNativeTarget "MONOTests" */;
+			buildPhases = (
+				387109A4558FE47BDDBDC30F /* [CP] Check Pods Manifest.lock */,
+				DD1067172243D407000B5E6E /* Sources */,
+				DD1067182243D407000B5E6E /* Frameworks */,
+				DD1067192243D407000B5E6E /* Resources */,
+				A7C4BE1C68DFD0B9F4024D6A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD10671D2243D407000B5E6E /* PBXTargetDependency */,
+			);
+			name = MONOTests;
+			productName = MONOTests;
+			productReference = DD10671B2243D407000B5E6E /* MONOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD1067252243D407000B5E6E /* MONOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD1067352243D407000B5E6E /* Build configuration list for PBXNativeTarget "MONOUITests" */;
+			buildPhases = (
+				DD1067222243D407000B5E6E /* Sources */,
+				DD1067232243D407000B5E6E /* Frameworks */,
+				DD1067242243D407000B5E6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD1067282243D407000B5E6E /* PBXTargetDependency */,
+			);
+			name = MONOUITests;
+			productName = MONOUITests;
+			productReference = DD1067262243D407000B5E6E /* MONOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD1066FB2243D405000B5E6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = LXN;
+				TargetAttributes = {
+					DD1067022243D405000B5E6E = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					DD10671A2243D407000B5E6E = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DD1067022243D405000B5E6E;
+					};
+					DD1067252243D407000B5E6E = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = DD1067022243D405000B5E6E;
+					};
+				};
+			};
+			buildConfigurationList = DD1066FE2243D405000B5E6E /* Build configuration list for PBXProject "MONO" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD1066FA2243D405000B5E6E;
+			productRefGroup = DD1067042243D405000B5E6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD1067022243D405000B5E6E /* MONO */,
+				DD10671A2243D407000B5E6E /* MONOTests */,
+				DD1067252243D407000B5E6E /* MONOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD1067012243D405000B5E6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1067132243D407000B5E6E /* LaunchScreen.storyboard in Resources */,
+				DD1067102243D407000B5E6E /* Assets.xcassets in Resources */,
+				DD10670E2243D405000B5E6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1067192243D407000B5E6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1067242243D407000B5E6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		387109A4558FE47BDDBDC30F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MONO-MONOTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FCD2DF70AC17317F7D7A1EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MONO/Pods-MONO-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/ZFPlayer/ZFPlayer/ZFPlayer.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFPlayer.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MONO/Pods-MONO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A042CBA9A526196D587422D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MONO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7C4BE1C68DFD0B9F4024D6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MONO-MONOTests/Pods-MONO-MONOTests-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/ZFPlayer/ZFPlayer/ZFPlayer.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFPlayer.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MONO-MONOTests/Pods-MONO-MONOTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD1066FF2243D405000B5E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD10670B2243D405000B5E6E /* ViewController.m in Sources */,
+				DD1067162243D407000B5E6E /* main.m in Sources */,
+				DD1067082243D405000B5E6E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1067172243D407000B5E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD1067202243D407000B5E6E /* MONOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1067222243D407000B5E6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD10672B2243D407000B5E6E /* MONOUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD10671D2243D407000B5E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD1067022243D405000B5E6E /* MONO */;
+			targetProxy = DD10671C2243D407000B5E6E /* PBXContainerItemProxy */;
+		};
+		DD1067282243D407000B5E6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD1067022243D405000B5E6E /* MONO */;
+			targetProxy = DD1067272243D407000B5E6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD10670C2243D405000B5E6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD10670D2243D405000B5E6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD1067112243D407000B5E6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD1067122243D407000B5E6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD10672D2243D407000B5E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD10672E2243D407000B5E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD1067302243D407000B5E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BA11DE3FF07FA0077FE9D1 /* Pods-MONO.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MONO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxn.htsl.MONO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD1067312243D407000B5E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 180FA471905A3F08510B1E55 /* Pods-MONO.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MONO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxn.htsl.MONO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD1067332243D407000B5E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537D3E9A22F6F7CBEE4C0730 /* Pods-MONO-MONOTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MONOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxn.htsl.MONOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MONO.app/MONO";
+			};
+			name = Debug;
+		};
+		DD1067342243D407000B5E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C5E4E8BE7C0AEBA34E9833 /* Pods-MONO-MONOTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MONOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxn.htsl.MONOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MONO.app/MONO";
+			};
+			name = Release;
+		};
+		DD1067362243D407000B5E6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MONOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxn.htsl.MONOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MONO;
+			};
+			name = Debug;
+		};
+		DD1067372243D407000B5E6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MONOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lxn.htsl.MONOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MONO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD1066FE2243D405000B5E6E /* Build configuration list for PBXProject "MONO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD10672D2243D407000B5E6E /* Debug */,
+				DD10672E2243D407000B5E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD10672F2243D407000B5E6E /* Build configuration list for PBXNativeTarget "MONO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1067302243D407000B5E6E /* Debug */,
+				DD1067312243D407000B5E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD1067322243D407000B5E6E /* Build configuration list for PBXNativeTarget "MONOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1067332243D407000B5E6E /* Debug */,
+				DD1067342243D407000B5E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD1067352243D407000B5E6E /* Build configuration list for PBXNativeTarget "MONOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD1067362243D407000B5E6E /* Debug */,
+				DD1067372243D407000B5E6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD1066FB2243D405000B5E6E /* Project object */;
+}

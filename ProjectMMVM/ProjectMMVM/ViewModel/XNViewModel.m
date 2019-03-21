@@ -13,6 +13,21 @@
 @property (nonatomic, readwrite, strong) RACCommand *loginCommand;
 @end
 @implementation XNViewModel
+<<<<<<< HEAD
+- (void)initilial{
+    _loginSingle = [[RACSignal combineLatest:@[RACObserve(self, username),RACObserve(self, password)] reduce:^(NSString *username,NSString *password){
+        return @(username.length>0&&password.length>0);
+    }]distinctUntilChanged];
+    @weakify(self);
+    self.loginCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal *(id input) {
+        
+        @strongify(self);
+    }];
+}
++ (instancetype)allocWithZone:(struct _NSZone *)zone{
+    [self initialize];
+}
+=======
 - (instancetype)init{
     if(self = [super init]){
         [self initialize];
@@ -44,4 +59,5 @@
         
     }];
 }
+>>>>>>> 17d7762e18dc7b2001af88c8acc807033a9f84e7
 @end

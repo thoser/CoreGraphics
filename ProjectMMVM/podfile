@@ -1,6 +1,10 @@
 platform :ios,'8.0'
 target 'ProjectMMVM' do
+<<<<<<< HEAD
+#use_frameworks!
+=======
     #use_frameworks!
+>>>>>>> 17d7762e18dc7b2001af88c8acc807033a9f84e7
 pod 'ReactiveCocoa','~>2.5'
 pod 'AFNetworking','~>3.1.0'
 end

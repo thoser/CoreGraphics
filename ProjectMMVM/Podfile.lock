@@ -26,10 +26,19 @@ DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - ReactiveCocoa (~> 2.5)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - ReactiveCocoa
+
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 
+<<<<<<< HEAD
+PODFILE CHECKSUM: 15b331909fe4f30dfad41ab434e31965ce7485c2
+=======
 PODFILE CHECKSUM: 1833f345c04ab599f5ed6fb30833e3ae7e63fcbb
+>>>>>>> 17d7762e18dc7b2001af88c8acc807033a9f84e7
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
